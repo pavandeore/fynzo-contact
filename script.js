@@ -23,7 +23,7 @@ let c = Math.round(Math.random()*254)
 
 document.body.style.background = `rgba(${a},${b},${c},0.2)`
 
-},1300)
+},1100)
 
 let gift = document.querySelector('.gift');
 setTimeout(()=>{
