@@ -26,6 +26,12 @@ document.body.style.background = `rgba(${a},${b},${c},0.2)`
 },1100)
 
 let gift = document.querySelector('.gift');
+let sec=5
+gift.innerHTML = `Simple Contact form but HIGH Functionality . Like this will disappear in ${sec} seconds.`
+setInterval(()=>{
+    sec--;
+    gift.innerHTML = `Simple Contact form but HIGH Functionality . Like this will disappear in ${sec} seconds.`
+},1000)
 setTimeout(()=>{
     document.body.removeChild(gift);
 },5000)
