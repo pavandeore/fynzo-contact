@@ -1,0 +1,62 @@
+:root{
+    --black : #252525;
+}
+*{
+    font-family: arial;
+    font-size: 17px;
+}
+html{
+    scroll-behavior: smooth;
+}
+input{
+    padding: 7px 15px;
+    border: 1px solid var(--black);
+    margin: 10px;
+}
+.dynamic-content > div {
+    margin-top: 20%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    animation-name: popin-animation;
+    animation-duration: 1.5s;
+}
+
+@keyframes popin-animation{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+.gift{
+    text-align: center;
+}
+.heading{
+    font-size: 40px;
+    color: var(--black);
+}
+.btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    color: var(--black);
+    border-radius: 2px;
+    border: 2px solid var(--black);
+    box-shadow: 1px 2px 1px 1px #c0c0c0;
+    outline: none;
+    margin-top: 15px;
+}
+.btn:active{
+    transform: translate(0.98);
+    box-shadow: 0px 0px 0px 0px #c0c0c0;
+}
+.special{
+    font-size: 1.5em;
+    font-weight: 800;
+    text-shadow: 5px 5px 2px #c0c0c0;
+}
